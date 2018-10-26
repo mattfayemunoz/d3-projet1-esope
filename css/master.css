@@ -1,0 +1,151 @@
+/* Ceci est un commentaire en CSS - Les navigateurs ignorent les commentaires.
+De cette manière nous pouvons laisser des messages pour d'autres codeurs et des explications de ce que nous avons fait. */
+
+/* Dans les 4 selectors suivants nous allons travailler sur la navigation de notre page.
+
+Nous découvrons ici la possibilité d'utiliser des selectors composés ex : header ul  Ceci permet, par exemple, de cibler les elements de la liste du header sans affecter ceux du footer.
+ */
+header {
+  background: rgb(0, 200, 255);
+  background-color: #FAD961;
+background-image:repeating-linear-gradient()-gradient(90deg, #FAD961 0%, #F76B1C 100%);
+border-radius: 52px 52px 52px 52px;
+-moz-border-radius: 52px 52px 52px 52px;
+-webkit-border-radius: 52px 52px 52px 52px;
+bordure: 0px solide # 000000;
+  padding: 12px;
+  display: flex;
+justify-content: center;
+
+}
+
+header ul {
+  list-style-type: none;
+
+
+}
+
+header li {
+  display: inline-block;
+  border: 5px solid #ffffff;
+
+}
+
+header a {
+  text-decoration: none;
+  color : #ffffff;
+  padding: 20px;
+}
+
+/* A noter ici :
+1. L'utilisation d'une class sur la div, nous la ciblons ici dans la CSS au moyen d'un point .
+2. l'utilisation de background image et de background size
+3. une hauteur minimal à la div. (pour comprendre ce qu'est une VH : https://css-tricks.com/the-lengths-of-css/)
+*/
+.hero {
+  background: rgb(05, 100, 0) url('images/singefond.jpg') top center no-repeat;
+  color : #fff;
+  min-height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+  border-radius: 52px 52px 52px 52px;
+-moz-border-radius: 52px 52px 52px 52px;
+-webkit-border-radius: 52px 52px 52px 52px;
+border: 0px solide # 000000;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+/* Sur les sections :
+1. Nous utilisons encore une hauteur minimale pour faciliter la lecture et le rythme vertical de la page.
+2. Nous utilsons des classes pour permettre d'aleterner visuellement les sections.
+*/
+section {
+  min-height: 100vh;
+  justify-content: space-between;
+}
+
+.content,
+.illustration {
+  flex-basis: 390px;
+}
+
+
+.odd {
+  background: rgb(12, 132, 142);
+  border-radius: 52px 52px 52px 52px;
+-moz-border-radius: 52px 52px 52px 52px;
+-webkit-border-radius: 52px 52px 52px 52px;
+bordure: 0px solide # 000000;
+display: flex;
+align-items: center;
+
+background: rgba(255,143,5,1);
+background: -moz-linear-gradient(left, rgba(255,143,5,1) 0%, rgba(216,119,1,1) 76%, rgba(209,115,0,1) 90%, rgba(209,115,0,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,143,5,1)), color-stop(76%, rgba(216,119,1,1)), color-stop(90%, rgba(209,115,0,1)), color-stop(100%, rgba(209,115,0,1)));
+background: -webkit-linear-gradient(left, rgba(255,143,5,1) 0%, rgba(216,119,1,1) 76%, rgba(209,115,0,1) 90%, rgba(209,115,0,1) 100%);
+background: -o-linear-gradient(left, rgba(255,143,5,1) 0%, rgba(216,119,1,1) 76%, rgba(209,115,0,1) 90%, rgba(209,115,0,1) 100%);
+background: -ms-linear-gradient(left, rgba(255,143,5,1) 0%, rgba(216,119,1,1) 76%, rgba(209,115,0,1) 90%, rgba(209,115,0,1) 100%);
+background: linear-gradient(to right, rgba(255,143,5,1) 0%, rgba(216,119,1,1) 76%, rgba(209,115,0,1) 90%, rgba(209,115,0,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff8f05', endColorstr='#d17300', GradientType=1 );
+}
+
+.even {
+  background: rgb(178, 74, 0);
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+
+}
+
+/* Nous souhaitons que les images soient responsives... c'est à dire n'éxcèdent pas une certaine largeur ET se redimensionnent avec leur parent */
+
+.image-block {
+  max-width: 640px;
+  border: 5px solid #000;
+
+}
+
+.image-block img {
+  width : 100%;
+display:block;
+}
+
+figcaption {
+font-family: 'Noto Serif', serif;
+  font-style: italic;
+  text-align: justify;
+
+}
+
+footer {
+  min-height: 200px;
+  background: #000;
+  color : #ffffff;
+  text-align: center;
+}
+
+section {
+  display: flex;
+  justify-content: space-around;
+}
+
+
+
+/*
+
+// Small devices
+
+// Medium devices (landscape phones, 576px and up)
+@media (min-width: 640px) { ... }
+
+// Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+// Extra large devices
+
+@media (min-width: 1440px) { ... }
+
+*/

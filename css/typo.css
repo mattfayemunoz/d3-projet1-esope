@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display+SC');
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Kodchasan');
+@import url('https://fonts.googleapis.com/css?family=Anton');
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif');
+@import url('https://fonts.googleapis.com/css?family=Righteous');
+html {
+  font-size: 1em;
+}
+
+body {
+  font-family: 'Noto Serif', serif;
+  font-weight: 400;
+  line-height: 1.45;
+}
+
+p {
+  margin-bottom: 3em;
+}
+
+h1, h2, h3, h4 {
+font-family: 'Playfair Display SC', serif;
+  margin:center;
+  font-weight: inherit;
+  line-height: 1.2;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3em;
+  text-align: center;
+}
+
+h2 {font-size: 2.4em;
+}
+
+h3 {font-size: 1.999em;}
+
+h4 {font-size: 1.414em;}
+
+small, .font_small {font-size: 0.707em;}
+
+#section04 {
+  font-family: 'Abril Fatface', cursive;
+}
+
+#section04 h1 {
+  font-family: 'Abril Fatface', cursive;
+}
+
+#section01 {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+#section01 h1 {
+  font-family: 'Kodchasan', sans-serif;
+}
+
+#section05 {
+  font-family: 'Anton', sans-serif;
+font-style: italic;
+}
+
+#section03 {
+  font-family: 'Bree Serif', serif;
+}
+
+#section03 h1 {
+  font-family: 'Kodchasan', sans-serif;
+font-style: oblique;
+}
+
+#section02 h1 {
+  font-family: 'Righteous', cursive;
+
+}
+
+.even h1{
+color: #ffffff ;
+}
+
+.hero h1 {
+  font-family: 'Righteous', cursive;
+
+}
